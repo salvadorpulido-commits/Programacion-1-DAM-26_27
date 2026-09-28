@@ -14,6 +14,40 @@ public class Ejercicio07Parte01 {
 
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		
+		//Declaramos variables
+		
+		String nombre;
+		String direccion;
+		String telefono;
+		
+		//Pedimos datos 
+		
+		System.out.println("Introduzca su nombre: ");
+		nombre = sc.nextLine();
+		
+		System.out.println("Introduzca su direccion: ");
+		direccion = sc.nextLine();
+		
+		System.out.println("Introduzca su telefono: ");
+		telefono = sc.nextLine();
+		
+		//Imprimimos en lineas diferentes
+		
+		System.out.println("nombre introducido " + nombre);
+		System.out.println("nombre introducido " + direccion);
+		System.out.println("nombre introducido " + telefono);
+		
+		//Cerramos scanner
+		
+		sc.close();
+		
+		
+		
+		
+		
+		
 		
 		
 	}
