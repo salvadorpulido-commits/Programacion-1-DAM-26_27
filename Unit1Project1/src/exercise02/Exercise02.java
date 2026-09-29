@@ -7,6 +7,10 @@ public class Exercise02 {
 		System.out.println("Hello, How are you? ");
 		System.out.println("Fine, thanks. ");
 
+		//The output after executing this code is:
+        // Hello, How are you? 
+		// Fine, thanks.
+		
 	}
 
 }

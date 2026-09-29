@@ -1,5 +1,10 @@
 package exercise05;
 
+//Create a package named “exercise5” and a Class named “Exercise5”. 
+//Write a program that displays your name, address and telephone number, 
+//each on separate lines.
+
+
 public class Exercise05 {
 
 	public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package exercise06;
 
+//Adapt the above program to include a blank line between your 
+//address and telephone number.
+
 public class Exercise06 {
 
 	public static void main(String[] args) {

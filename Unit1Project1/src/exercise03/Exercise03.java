@@ -6,6 +6,9 @@ public class Exercise03 {
 		
 		System.out.println("1 + 2 " + "+ 3" + " = 6");
 
+		//The output after executing this code is:
+        // 1 + 2 + 3 = 6 
+		
 	}
 
 }
