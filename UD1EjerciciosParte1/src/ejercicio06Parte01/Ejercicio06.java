@@ -20,8 +20,8 @@ public class Ejercicio06 {
 		
 		//Declaremos variables de ambos valores
 		
-		double num1;
-		double num2;
+		Double num1;
+		Double num2;
 		
 		//Pedimos al usuario que introduzca ekl primer numero
 		

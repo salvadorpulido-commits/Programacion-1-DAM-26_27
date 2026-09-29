@@ -13,7 +13,7 @@ public class Ejercicio01 {
 		Scanner sc = new Scanner(System.in);
 		
 		//Asignamos variable
-		int number; 
+		Integer number; 
 		
 		//Pedimos un numero al usuario
 		System.out.println("Introduce un numero: ");

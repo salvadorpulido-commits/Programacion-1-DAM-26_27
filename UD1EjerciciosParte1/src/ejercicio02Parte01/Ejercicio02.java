@@ -15,11 +15,11 @@ public class Ejercicio02 {
 		//Pedimos la edad al usuario
 		
 		System.out.println("Introduzca su edad: ");
-		int edadActual = sc.nextInt();
+		Integer edadActual = sc.nextInt();
 		
 		//calcular la edad del proximo año
 		
-		int edadProximoAño = edadActual + 1;
+		Integer edadProximoAño = edadActual + 1;
 		
 		//Mostrar el resultado
 		

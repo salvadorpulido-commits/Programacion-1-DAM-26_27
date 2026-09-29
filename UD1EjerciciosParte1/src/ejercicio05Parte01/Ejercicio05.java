@@ -18,11 +18,11 @@ public class Ejercicio05 {
 		
 		// Variables del radio, longitud y area de la circunferencia
 		
-		double radio;
+		Double radio;
 		
-		double longitud;
+		Double longitud;
 		
-		double area;
+		Double area;
 		
 		//Introducimos el radio
 		

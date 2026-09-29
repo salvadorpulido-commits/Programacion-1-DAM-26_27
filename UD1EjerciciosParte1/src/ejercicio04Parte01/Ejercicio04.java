@@ -21,7 +21,7 @@ public class Ejercicio04 {
 		
 		// Guardamos la primera nota
 		
-		int nota1 = sc.nextInt();
+		Integer nota1 = sc.nextInt();
 		
 		// Pedimos la segunda nota
 		
@@ -29,11 +29,11 @@ public class Ejercicio04 {
 		
 		// Guardamos la segunda nota
 		
-		int nota2 = sc.nextInt();
+		Integer nota2 = sc.nextInt();
 		
 		// Calculamos la media de las dos notas, indicando que puede tener decimales
 		
-		double notaMedia = (nota1 + nota2) / 2.0;
+		Double notaMedia = (nota1 + nota2) / 2.0;
 		
 		//Imprimimos resultado
 		
