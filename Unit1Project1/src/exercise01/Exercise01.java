@@ -1,0 +1,15 @@
+package exercise01;
+
+public class Exercise01 {
+
+	public static void main(String[] args) {
+    
+		System.out.print("Hello, how are you? ");
+		System.out.println("Fine thanks.");
+
+		
+		//The output after executing this code is:
+		// Hello, how are you? Fine thanks.
+	}
+
+}
