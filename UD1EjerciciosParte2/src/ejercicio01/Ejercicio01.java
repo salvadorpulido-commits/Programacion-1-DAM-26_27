@@ -3,6 +3,10 @@ package ejercicio01;
 import java.util.Scanner;
 
 public class Ejercicio01 {
+	
+	/* Escribe un programa que solicite al usuario la base y la altura de un rectángulo 
+	 * (pueden contener decimales). Debe calcular y mostrar su perímetro y su área.
+	 */
 
     public static void main(String[] args) {
 
@@ -10,7 +14,7 @@ public class Ejercicio01 {
     	
         Scanner sc = new Scanner(System.in);
 
-        // Pedimos la base y la altura 
+        // Pedimos la base y la altura al usuario
         
         System.out.println("Introduce la base: ");
         Double base = sc.nextDouble();
