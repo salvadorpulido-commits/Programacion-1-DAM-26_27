@@ -6,7 +6,7 @@ public class Ejemplo3If {
 	
 		Integer anio = 2000;
 		Integer mes = 6;
-		Integer dias = 0;
+		Integer dias = null;
 		Boolean bisiesto = anio%400==0 || (anio%4==0 && anio%100!=0);
 		
 		if (mes == 2) {
