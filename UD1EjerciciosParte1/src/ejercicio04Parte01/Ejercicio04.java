@@ -44,11 +44,6 @@ public class Ejercicio04 {
 		sc.close();
 		
 		
-		
-		
-		
-		
-		
 
 	}
 
