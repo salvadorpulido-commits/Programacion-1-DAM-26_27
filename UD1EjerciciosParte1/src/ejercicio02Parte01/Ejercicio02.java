@@ -19,11 +19,11 @@ public class Ejercicio02 {
 		
 		//calcular la edad del proximo año
 		
-		Integer edadProximoAño = edadActual + 1;
+		Integer edadProximoAnio = edadActual + 1;
 		
 		//Mostrar el resultado
 		
-		System.out.println("El proximo año tendras " + edadProximoAño + " años.");	
+		System.out.println("El proximo año tendras " + edadProximoAnio + " años.");	
 		
 		//Cerramos scanner
 		
@@ -32,3 +32,4 @@ public class Ejercicio02 {
 	}
 
 }
+
