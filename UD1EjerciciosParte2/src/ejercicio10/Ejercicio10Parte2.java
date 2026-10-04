@@ -18,7 +18,7 @@ public class Ejercicio10Parte2 {
         int anio = sc.nextInt();
 		
 		Boolean b = anio%400==0 || (anio%4==0 && anio%100!=0);
-		System.out.println("El año "+anio + " -->"+b);
+		System.out.println("El año " + anio + " --> " + b );
 		
 		sc.close();
 		
