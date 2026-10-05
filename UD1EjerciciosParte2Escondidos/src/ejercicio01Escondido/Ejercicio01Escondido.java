@@ -10,9 +10,14 @@ public class Ejercicio01Escondido {
 
 		System.out.print("Introduce un número con decimales: ");
 		double x = sc.nextDouble();
+		
+		// parte entera (trunca)
 
-		int entero = (int) x;           // parte entera (trunca)
-		double decimales = x - entero;  // parte decimal (con signo)
+		int entero = (int) x; 
+		
+		// parte decimal (con signo)
+		
+		double decimales = x - entero;  
 
 		if (decimales >= 0.5) {
 			entero++;
