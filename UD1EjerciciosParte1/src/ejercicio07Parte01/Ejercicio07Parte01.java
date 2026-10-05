@@ -43,13 +43,7 @@ public class Ejercicio07Parte01 {
 		
 		sc.close();
 		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 
 }
