@@ -42,8 +42,7 @@ public class Ejercicio04Escondido {
 		// Cerramos Scanner
 		
 		sc.close();
-		
-		
+				
 	}
 
 }
