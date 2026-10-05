@@ -3,6 +3,10 @@ package ejercicio01Escondido;
 import java.util.Scanner;
 
 public class Ejercicio01Escondido {
+	
+	/* Realizar un programa que pida como entrada un número con decimales y lo muestre redondeado 
+	 * al entero más próximo. (SIN UTILIZAR Math.round())
+	 */
 
 	public static void main(String[] args) {
 
