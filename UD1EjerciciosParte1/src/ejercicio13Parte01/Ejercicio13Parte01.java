@@ -57,14 +57,6 @@ public class Ejercicio13Parte01 {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-	
-
 	}
 
 }
