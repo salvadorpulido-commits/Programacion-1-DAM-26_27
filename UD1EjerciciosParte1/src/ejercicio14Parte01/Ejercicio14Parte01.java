@@ -45,7 +45,6 @@ public class Ejercicio14Parte01 {
 		
 		sc.close();
 		
-
 	}
 
 }
