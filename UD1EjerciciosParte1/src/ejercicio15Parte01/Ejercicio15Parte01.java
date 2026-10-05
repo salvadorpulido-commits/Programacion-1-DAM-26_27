@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio15Parte01 {
 	
-	/*Escribe un programa en el que declares una constante IVA de valor igual a 21. 
+	/* Escribe un programa en el que declares una constante IVA de valor igual a 21. 
 	 * A continuación, pídele un precio al usuario (recuerda que los precios contienen decimales) 
 	 * y calcula cuál será el precio final con el IVA aplicado.
 	 */
@@ -31,7 +31,6 @@ public class Ejercicio15Parte01 {
 				
 		sc.close();
 		
-
 	}
 
 }
