@@ -35,7 +35,7 @@ public class Ejercicio02Escondido {
 		
 		sc.close();
 		
-
 	}
 
 }
+
