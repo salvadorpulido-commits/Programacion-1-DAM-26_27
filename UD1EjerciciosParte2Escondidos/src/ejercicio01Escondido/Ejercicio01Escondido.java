@@ -1,4 +1,4 @@
-package ejercicio1Escondido;
+package ejercicio01Escondido;
 
 import java.util.Scanner;
 
