@@ -26,6 +26,8 @@ public class Ejercicio09Parte01 {
 		
 		//Cerramos Scanner
 		sc.close();
+		
+		
 	}
 
 }
