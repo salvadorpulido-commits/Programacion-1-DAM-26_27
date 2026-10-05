@@ -2,7 +2,7 @@ package ejercicio02Escondido;
 
 import java.util.Scanner;
 
-public class Ejercicio02escondido {
+public class Ejercicio02Escondido {
 	
 	/* Escribe un programa que tome como entrada un número entero e indique qué cantidad hay que sumarle 
 	 * para que sea múltiplo de 7. Por ejemplo, a 2 hay que sumarle 5 para que sea múltiplo de 7. 
