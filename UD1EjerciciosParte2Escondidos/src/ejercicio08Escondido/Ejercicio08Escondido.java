@@ -1,5 +1,7 @@
 package ejercicio08Escondido;
 
+import java.util.Scanner;
+
 public class Ejercicio08Escondido {
 
 	public static void main(String[] args) {
@@ -15,8 +17,32 @@ public class Ejercicio08Escondido {
 		 * correspondiente en centímetros. Utiliza la conversión de tipos.
 		 */
 
-
-
+		// Abrimos Scanner
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// Pedimos la longitud en metros
+		
+		System.out.println("Introduce la longitud del lanzamiento en metros: ");
+		Double metros = sc.nextDouble();
+		
+		// Pasamos los metros a centimetros
+		
+		Double centimetros = metros * 100;
+		
+		// Casteamos a entero, el (double) pasa el Double a numero simple y el (int) quita los decimales
+		
+		Integer centimetrosEnteros = (int) (double) centimetros;
+		
+		// Mostramos el resultado por consola
+		
+		System.out.println("La longitud a tener en cuenta es: " + centimetrosEnteros + " cm." );
+		
+		
+		// Cerramos scanner
+		
+		sc.close();
+		
 	}
 
 }
