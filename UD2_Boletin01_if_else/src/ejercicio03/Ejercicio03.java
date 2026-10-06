@@ -1,5 +1,7 @@
 package ejercicio03;
 
+import java.util.Scanner;
+
 public class Ejercicio03 {
 	
 	/* Escribir un programa que pida al usuario un mes y un año y 
@@ -11,10 +13,22 @@ public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		
-		// Variables
+		// Abrimos Scanner
 		
-		Integer anio = 2000;
-		Integer mes = 6;
+		Scanner sc = new Scanner(System.in);
+		
+		// Pedimos un mes al usuario
+		
+		System.out.println("Introduce un mes por su numero: ");
+		Integer mes = sc.nextInt();
+		
+		// Pedimos un mes al usuario
+		
+		System.out.println("Introduce un año: ");
+		Integer anio = sc.nextInt();
+		
+		// Variables
+	
 		Integer dias = null;
 		Boolean bisiesto = anio%400==0 || (anio%4==0 && anio%100!=0);
 		
@@ -31,6 +45,8 @@ public class Ejercicio03 {
 		}
 
 		System.out.println("El mes " + mes + " del año " + anio + " tiene " + dias + " días");
+		
+		sc.close();
 	}
 }
 
