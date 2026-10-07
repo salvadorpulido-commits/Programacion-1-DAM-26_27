@@ -16,12 +16,24 @@ public class Ejercicio09escondido {
 	 * 
 	 */
 
-
-
 	public static void main(String[] args) {
+		
+		// Abrimos Scanner
 		
 		Scanner sc = new Scanner(System.in);
 		
+		// Pedimos al ususario que introduzca un identificador
+		
+		System.out.println("Introduce un identificador de  volumen: ");
+		Integer identificador = sc.nextInt();
+		
+		// Operamos para obtener el volumen 
+		
+		Integer volumen = identificador / 100;
+		
+		System.out.println("El problema esta en el volumen: " + volumen);
+			
+		//Cerramos Scanner
 		
 		sc.close();
 		
