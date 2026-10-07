@@ -13,25 +13,18 @@ public class Ejercicio01Escondido {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Introduce un número con decimales: ");
-		double x = sc.nextDouble();
+		Double numeroDecimales = sc.nextDouble();
 		
-		// parte entera (trunca)
-
-		int entero = (int) x; 
+		// Operamos para truncar el resultado de decimal a entero redondeado
 		
-		// parte decimal (con signo)
+		Integer numRedondeado = numeroDecimales >=0 ? (int) (numeroDecimales + 0.5) : (int) ( numeroDecimales - 0.5);
 		
-		double decimales = x - entero;  
+		// Mostramos resultado por pantalla
+		
+		System.out.println("Redondeado al entero más próximo: " + numRedondeado);
 
-		if (decimales >= 0.5) {
-			entero++;
-		} else if (decimales <= -0.5) {
-			entero--;
-		}
-
-		System.out.println("El número es: " + x);
-		System.out.println("Redondeado al entero más próximo: " + entero);
-
+		// Cerramos Scanner
+		
 		sc.close();
 	}
 }
