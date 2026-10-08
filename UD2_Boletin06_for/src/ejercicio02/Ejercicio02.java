@@ -15,17 +15,20 @@ public class Ejercicio02 {
 
 		System.out.println("Introduce un numero:");
 		Integer num = sc.nextInt();
+		Integer cont = 0; 
 
 		for (int i = 1; i <= num; i++) {
 			if (i % 3 == 0) {
+				cont ++;
 
-				System.out.println(i);
+				System.out.println("Entre 1 y " + num + " hay " + cont + " multiplos de 3: ");
 			}
-
-			sc.close();
 
 		}
 
+			sc.close();
+
+		
 	}
 
 }
