@@ -20,9 +20,9 @@ public class Ejercicio01 {
 
 			System.out.println(i);
 
-			sc.close();
-
 		}
+		
+		sc.close();
 
 	}
 
