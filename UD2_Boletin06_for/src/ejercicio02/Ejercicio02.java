@@ -10,25 +10,32 @@ public class Ejercicio02 {
 	 */
 
 	public static void main(String[] args) {
+		
+		// Abrimos Scanner
 
 		Scanner sc = new Scanner(System.in);
+		
+		// Pedimos numero al usuario y 
+		// declaramos la variable contador iniciado a 0
 
 		System.out.println("Introduce un numero:");
 		Integer num = sc.nextInt();
-		Integer cont = 0; 
+		Integer cont = 0;
+		
+		// Operamos con for y condicion if
 
 		for (int i = 1; i <= num; i++) {
 			if (i % 3 == 0) {
-				cont ++;
+				cont++;
 
-				System.out.println("Entre 1 y " + num + " hay " + cont + " multiplos de 3: ");
 			}
 
 		}
 
-			sc.close();
+		System.out.println("Entre 1 y " + num + " hay " + cont + " multiplos de 3: ");
 
-		
+		sc.close();
+
 	}
 
 }
