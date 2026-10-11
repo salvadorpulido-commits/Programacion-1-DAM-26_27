@@ -1,0 +1,41 @@
+package ejercicio02;
+
+import java.util.Scanner;
+
+public class Ejercicio02 {
+
+	/*
+	 * Realiza un programa que cuente los múltiplos de 3 desde el 1 hasta un número
+	 * que introducimos por teclado.
+	 */
+
+	public static void main(String[] args) {
+		
+		// Abrimos Scanner
+
+		Scanner sc = new Scanner(System.in);
+		
+		// Pedimos numero al usuario y 
+		// declaramos la variable contador iniciado a 0
+
+		System.out.println("Introduce un numero:");
+		Integer num = sc.nextInt();
+		Integer cont = 0;
+		
+		// Operamos con for y condicion if
+
+		for (int i = 1; i <= num; i++) {
+			if (i % 3 == 0) {
+				cont++;
+
+			}
+
+		}
+
+		System.out.println("Entre 1 y " + num + " hay " + cont + " multiplos de 3: ");
+
+		sc.close();
+
+	}
+
+}
