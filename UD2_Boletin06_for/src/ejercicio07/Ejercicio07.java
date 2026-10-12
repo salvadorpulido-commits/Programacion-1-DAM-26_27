@@ -1,5 +1,7 @@
 package ejercicio07;
 
+import java.util.Scanner;
+
 public class Ejercicio07 {
 
 	/*
@@ -8,10 +10,18 @@ public class Ejercicio07 {
 	 */
 
 	public static void main(String[] args) {
-		
-		Integer n = 1;
+
+		// Abrimos Scanner
+
+		Scanner sc = new Scanner(System.in);
+
+		// Pedimos al usuario un numero entero
+
+		System.out.println("Introduce un numero entero: ");
+		Integer n = sc.nextInt();
+
 		Boolean esPrimo = true;
-		
+
 		for (int i = 2; i < n; i++) {
 			if (n % i == 0) {
 				esPrimo = false;
@@ -19,7 +29,23 @@ public class Ejercicio07 {
 			}
 
 		}
+
+		if (n < 2) {
+			esPrimo = false;
+		}
+
+		if (esPrimo) {
+
+			System.out.println("El numero " + n + " es primo. ");
+
+		} else {
+
+			System.out.println("El numero " + n + " no es primo. ");
+		}
+
 		System.out.println(esPrimo);
+
+		sc.close();
 	}
 
 }
