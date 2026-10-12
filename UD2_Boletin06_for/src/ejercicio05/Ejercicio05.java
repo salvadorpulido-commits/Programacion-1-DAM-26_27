@@ -22,6 +22,8 @@ public class Ejercicio05 {
 			
 		}
 		System.out.println("El factrorial de " + n + " es: " + res);
+		
+		sc.close();
 	}
 
 }
