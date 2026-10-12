@@ -21,7 +21,7 @@ public class Ejercicio01 {
 		System.out.println("Introduce una nota de 0 a 10: ");
 		Integer nota = sc.nextInt();
 
-		// Se calcula la nota
+		// Se calcula la nota y se devuelve resultado 
 
 		switch (nota) {
 
@@ -46,6 +46,8 @@ public class Ejercicio01 {
 		case 10:
 			System.out.println("Sobresaliente");
 			break;
+			
+			// Se añade default para valores incorrectos
 
 			default:
 				System.out.println("Incorrecto, la nota debe ser entre 1 y 10");
