@@ -8,6 +8,13 @@ public class Ejercicio03 {
 	 * Escribe un algoritmo que le pida al usuario dos números. A continuación debe
 	 * mostrar el siguiente menú por pantalla: A . SUMAR LOS NÚMEROS B . RESTAR LOS
 	 * NÚMEROS C . MULTIPLICAR LOS NÚMEROS D . DIVIDIR LOS NÚMEROS
+	 * 
+	 * Después, el algoritmo debe pedirle al usuario que seleccione una opción y que 
+	 * haga la operación que marca esa opción, mostrando por último el resultado de 
+	 * la operación elegida por el usuario. 
+	 * Si el usuario elige una opción incorrecta, el algoritmo se lo hace saber al usuario	
+	 * y no haría nada.
+
 	 */
 
 	public static void main(String[] args) {
@@ -36,12 +43,11 @@ public class Ejercicio03 {
 
 		System.out.println("Selecciona una opcion (A, B, C o D): ");
 		
-		// Guardamos en la variable Double por si hay decimales
+		// Declaramos la variable donde guardaremos el resultado
 
 		Double resultado;
 		
 		// Leemos la opcion elegida
-		
 		
 		String opcion = sc.next().toUpperCase();
 
