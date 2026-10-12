@@ -9,20 +9,30 @@ public class Ejercicio06 {
 	 */
 
 	public static void main(String[] args) {
-		
-		
+				
 		Scanner sc = new Scanner(System.in);
 		
 		Boolean algunSuspenso = false;
-		for (int i = 0; i <= 5; i++) {
-			System.out.println("Introduce una nota: ");
+		
+		for (int i = 1; i <= 5; i++) {
 			
+			System.out.println("Introduce una nota: ");
 			Integer nota=sc.nextInt();
 			
 			if (nota<5) {
+				
 				algunSuspenso = true;
 			}
-			break;
+			
+		}
+		
+		if (algunSuspenso) {
+			
+			System.out.println("Hay un suspenso.");
+			
+		} else {
+			
+			System.out.println("No hay ningun suspenso. ");
 		}
 		
 		sc.close();
