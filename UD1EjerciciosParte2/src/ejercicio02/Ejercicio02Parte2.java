@@ -3,6 +3,12 @@ package ejercicio02;
 import java.util.Scanner;
 
 public class Ejercicio02Parte2 {
+	
+	/* Diseña una aplicación que pida una cantidad entera de segundos 
+	 * y la convierta en horas, minutos y segundos. 
+	 * Para realizar la descomposición utiliza los operadores / y %.
+	 */
+
 
 	public static void main(String[] args) {
 		
@@ -23,4 +29,5 @@ public class Ejercicio02Parte2 {
 	}
 
 }
+
 
