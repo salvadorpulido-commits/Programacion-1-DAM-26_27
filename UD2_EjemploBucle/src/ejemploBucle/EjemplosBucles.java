@@ -6,11 +6,13 @@ public class EjemplosBucles {
 		
 		int i = 1;
 		
-		while ( true ) {
-			System.out.println("Hola ");
-			i++;
+		// El bucle se ejecutará mientras i sea menor o igual a 5
+		while (i <= 5) {
+			System.out.println("Hola " + i);
+			i++; // Incrementa i en 1 en cada iteración para evitar un bucle infinito
 		}
-
+		
 	}
 
 }
+
