@@ -8,6 +8,21 @@ public class Ejercicio01 {
 	 * comprendido entre 0 y 9999. La aplicación tendrá que indicar 
 	 * si el número introducido es capicúa. 
 	 * Un número es capicúa si se lee igual de izquierda a derecha que de derecha a izquierda.
+	 * 
+	 * PRUEBAS MÍNIMAS
+	 * Entrada | Esperado       | Obtenido
+	 * 7       | Es capicúa     | Es capicúa
+	 * 0       | Es capicúa     | Es capicúa
+	 * 33      | Es capicúa     | Es capicúa
+	 * 34      | No es capicúa  | No es capicúa
+	 * 121     | Es capicúa     | Es capicúa
+	 * 123     | No es capicúa  | No es capicúa
+	 * 1221    | Es capicúa     | Es capicúa
+	 * 1231    | No es capicúa  | No es capicúa
+	 * 9999    | Es capicúa     | Es capicúa
+	 * -1      | Valor erróneo  | Valor erróneo
+	 * 10000   | Valor erróneo  | Valor erróneo
+	 * 
 	 */
 
 
