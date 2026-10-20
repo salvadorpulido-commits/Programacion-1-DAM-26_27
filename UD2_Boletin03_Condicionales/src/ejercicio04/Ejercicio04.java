@@ -10,6 +10,16 @@ public class Ejercicio04 {
 	 * (comprendidos entre 1 y 99) y el usuario tiene que sumarlos. 
 	 * La aplicación le pedirá al usuario que introduzca el resultado de la suma. 
 	 * La aplicación le indicará si el resultado es correcto o no.
+	 * 
+	 * PRUEBAS MÍNIMAS (fijando num1 y num2 temporalmente para poder probar)
+	 * 
+	 * num1 | num2 | Entrada | Esperado   | Obtenido
+	 * 10   | 20   | 30      | Correcto   | Correcto
+	 * 10   | 20   | 31      | Incorrecto | 31
+	 * 1    | 1    | 2       | Correcto   | Correcto
+	 * 99   | 99   | 198     | Correcto   | Correcto 
+	 * 80   | 90   | 170     | Correcto   | Correcto
+	 * 
 	 */
 
 	public static void main(String[] args) {
