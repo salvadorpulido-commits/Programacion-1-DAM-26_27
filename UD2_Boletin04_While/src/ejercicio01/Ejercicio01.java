@@ -17,9 +17,13 @@ public class Ejercicio01 {
 	 */
 
 	public static void main(String[] args) {
+		
+		// Abrimos Scanner
 
 		Scanner sc = new Scanner(System.in);
 
+		//Declaramos variable suma a 0 fuera del while para ir guardando los numeros a sumar
+		
 		Integer suma = 0;
 
 		System.out.println("Introduce un numero: ");
