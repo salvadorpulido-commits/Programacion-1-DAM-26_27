@@ -13,7 +13,11 @@ public class Ejercicio04 {
 
 	public static void main(String[] args) {
 		
+		// Abrimos Scanner
+		
 		Scanner sc = new Scanner(System.in);
+		
+		// Declaramos las variables inicializadas a 0:
 		
 		Integer sumaPositivos = 0;
 		Integer sumaNegativos = 0;
@@ -21,13 +25,18 @@ public class Ejercicio04 {
 		Integer contadorCeros = 0;
 		Integer contador = 0;
 		Integer numero = 0;
+		
+		// Pedimos al ususario que introduzca los valores
+		
 		System.out.println("Introduce 10 numeros enteros (pueden ser positivos, negativos o cero): ");
 		
+		// Iniciamos mostrando los numeros que se van almacenando
 		
 		while ( contador < 10 ) {
 			 System.out.println("Numero " + (contador + 1) + ":");
 			 numero = sc.nextInt();
-			 
+	    
+		// Operamos		 
 			 
 		if (numero > 0) {
 			sumaPositivos += numero;
@@ -47,13 +56,10 @@ public class Ejercicio04 {
 			 
 		}
 		
-		
-		
-		
-		
-		
+		// Cerramos scanner
 		
 		sc.close();
 	}
 
 }
+
