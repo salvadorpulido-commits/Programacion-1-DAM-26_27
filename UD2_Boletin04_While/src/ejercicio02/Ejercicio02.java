@@ -17,7 +17,11 @@ public class Ejercicio02 {
 
 		Scanner sc = new Scanner(System.in);
 
+		// Declaramos variable contador para ir guardando los numero introducidos
+		
 		Integer contador = 0;
+		
+		// Pedimos numeros al usuario
 
 		System.out.println("Introduce numeros enteros positivos, para terminar introduce un numero negativo: ");
 		Integer numero = sc.nextInt();
