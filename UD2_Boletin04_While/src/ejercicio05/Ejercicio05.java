@@ -39,28 +39,43 @@ public class Ejercicio05 {
 			if (edad >= 18) {
 
 				numMayoresEdad++;
+				
+			}
 
+			// Pedimos edad al usuario
+				
+				System.out.println("Introduce una edad:");
+				edad = sc.nextInt();
+				
+		}
 	
-				mediaEdades = (double) sumaEdades / numAlumnos;
-
+		if (numAlumnos > 0 ) {
+			
+		mediaEdades = (double) sumaEdades / numAlumnos;
+		
+		
+				
 				// Imprimimos resultados
 				
 				System.out.println("La suma de edades es: " + sumaEdades);
 				System.out.println("El total de alumnos es: " + numAlumnos);
 				System.out.println("La media de edades es: " + mediaEdades);
 				System.out.println("El total de alumnos mayores de edad es: " + numMayoresEdad);
+		
+	
+			} else {
 				
-
-			}
-
+				System.out.println("No has introducido ninguna edad. ");
 			
-		}
+			
+            }
 
 		
 		// Cerramos Scanner
 
 		sc.close();
 
-	}
+		}
+
 
 }
