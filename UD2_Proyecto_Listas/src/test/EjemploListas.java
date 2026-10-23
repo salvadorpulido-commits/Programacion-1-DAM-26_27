@@ -26,6 +26,21 @@ public class EjemploListas {
 			
 		}
 		return suma;
-				
+			
 	}
+	
+	public static Integer hacerSumaConWhile(List<Integer> lis) {
+		Integer suma = 0;
+		for (int i = 0; i < lis.size(); i++) {
+			suma += lis.get(i);
+			
+			
+		}
+		
+		return suma;
+	}
+	
+	
+	
+	
 }
