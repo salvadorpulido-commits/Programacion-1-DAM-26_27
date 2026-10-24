@@ -15,45 +15,81 @@ public class Ejercicio20Bandera {
 //	....#+#....
 //	..#..+..#..
 //	#....+....#
-
+	
+	
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-		
-		Integer N;
-		
-		do {
-			System.out.println("Introduce un numero N (impar y positivo): ");
-			N = sc.nextInt();
-			
-		} while (N <= 0 || N % 2 == 0);
+        System.out.println("Introduce un numero N:");
+        Integer N = sc.nextInt();
 
-		for (int i = 0; i < N; i++) {
-			
-			for (int j = 0; j < N; j++) {
-				
-				if (j == N / 2 || i  == N / 2) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
 
-					System.out.print("+");
+                if (i == j || i + j == N - 1) {
 
-				} else if (i == j || i + j == N - 1) {
+                    System.out.print("#");
 
-					System.out.print("#");
+                } else if (j == N / 2 || i  == N / 2) {
 
-				
+                    System.out.print("+");
 
-				} else {
+                } else {
 
-					System.out.print(".");
+                    System.out.print(".");
 
-				}
-				
-			}
-			System.out.println();
-		}
+                }
 
-		sc.close();
-	}
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
 
 }
+
+
+//	public static void main(String[] args) {
+//
+//		Scanner sc = new Scanner(System.in);
+//
+//		
+//		Integer N;
+//		
+//		do {
+//			System.out.println("Introduce un numero N (impar y positivo): ");
+//			N = sc.nextInt();
+//			
+//		} while (N <= 0 || N % 2 == 0);
+//
+//		for (int i = 0; i < N; i++) {
+//			
+//			for (int j = 0; j < N; j++) {
+//				
+//				if (j == N / 2 || i  == N / 2) {
+//
+//					System.out.print("+");
+//
+//				} else if (i == j || i + j == N - 1) {
+//
+//					System.out.print("#");
+//
+//				
+//
+//				} else {
+//
+//					System.out.print(".");
+//
+//				}
+//				
+//			}
+//			System.out.println();
+//		}
+//
+//		sc.close();
+//	}
+//
+//}
+
