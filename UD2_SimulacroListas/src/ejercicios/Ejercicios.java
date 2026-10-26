@@ -1,7 +1,7 @@
 package ejercicios;
 
-import java.util.Iterator;
 import java.util.List;
+
 import utiles.Utiles;
 
 public class Ejercicios {
@@ -132,32 +132,99 @@ public class Ejercicios {
 	     }
 	
 	     return res;
+
 	 }
+
     
     // Ejercicio 02:  Clasificador de caramelos 
 	// Los caramelos recolectados tienen etiquetas: "dulce", "ácido", "salado", 
 	// "misterioso". 
-	// Crea un método que reciba una lista y cuente cuántos hay de un tipo dado, 
-	// ignorando nulos. 
+	// Crea un método que reciba una lista y cuente cuántos hay de un tipo dado. 
 	 
-	 public static Integer cuentaCaramelos(List<String> caramelos, 
-			 String tipo) {
-		 
-		 Integer contador = 0;
-		 
-		 for (String caramelo : caramelos) {
-			 if (caramelo == null) {
-				 continue;
-				
-			}
-			
-			 if (caramelo.equals(tipo)) {
-				contador++;
-			
-			}
-		}
-		 
-	return contador;
+	 
+	 public static void cuentaTodosCaramelos(List<String> caramelos) {
+		    Integer dulces = 0;
+		    Integer acidos = 0;
+		    Integer salados = 0;
+		    Integer misteriosos = 0;
+
+		    for (String caramelo : caramelos) {
+		        switch (caramelo) {
+		            case "dulce":
+		                dulces++;
+		                break;
+		            case "ácido":
+		                acidos++;
+		                break;
+		            case "salado":
+		                salados++;
+		                break;
+		            case "misterioso":
+		                misteriosos++;
+		                break;
+		            default:
+		                // etiqueta no reconocida: se ignora
+		                break;
+		        
+		        }
+		        
+		        		    
+		    }
+		    
+		    System.out.println("dulce: " + dulces);
+	        System.out.println("ácido: " + acidos);
+	        System.out.println("salado: " + salados);
+	        System.out.println("misterioso: " + misteriosos);
+	        
 	 }
-    
+	 
+	// Ejercicio 03: contador de pasos en el laberinto.
+	// Suma las distancias hasta encontrar un número negativo (trampa).
+	// Decisión: el negativo no se suma y el recorrido termina con break.
+	// El 0 no es una trampa, así que se suma (aporta 0) y se sigue avanzando.
+	 
+	 public static Integer pasosLaberinto(List<Integer> pasos) {
+		 Integer suma = 0;
+		 int i = 0;
+		 while (i < pasos.size()) {
+			 if (pasos.get(i)>0) {
+	            suma += pasos.get(i);
+	          
+	        } else {
+	        	break;
+	        	 
+	        }
+			 i++;
+	       
+	    }
+		 return suma; 
+	 }
+	 
+	 // Ejercicio 4 — Nivel medio de magia en las calabazas 
+	 // Cada calabaza tiene un nivel de magia (0–10). 
+	 // Crea un método que calcule el promedio de los valores mayores o iguales que 5, 
+	 // ignorando los inferiores. 
+	 
+	 public static Double promedioMagia(List<Integer> niveles) { 
+		
+		        Integer suma = 0;
+		        Integer cantidad = 0;
+		        double res = 0;
+		        
+		        for (Integer nivel : niveles) {
+		        	if (nivel >= 5)	{
+		        		suma += nivel;
+		        		cantidad++;
+		        	}
+		        }
+		        
+		        if (cantidad > 0) {
+					res = (double) suma / cantidad;
+				
+				}
+
+		        return res;
+		    }
+		        
 }
+

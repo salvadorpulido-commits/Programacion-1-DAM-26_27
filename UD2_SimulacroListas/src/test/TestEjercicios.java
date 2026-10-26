@@ -36,6 +36,8 @@ public class TestEjercicios {
         System.out.println("¿28 es perfecto?   " + Utiles.esPerfecto(28));
         System.out.println("¿12 es perfecto?   " + Utiles.esPerfecto(12));
         
+        System.out.println("Factorial de 5: " + Utiles.factorial(5));
+        
         //TODO Seguir haciendo las pruebas de los ejercicios
         
         
@@ -48,15 +50,35 @@ public class TestEjercicios {
         
         // ejercicio 02
         
-        System.out.println("\n--- EJERCICIO 2 ---");
-        List<String> lista = new ArrayList<String>();
-        lista.add("dulce"); lista.add("ácido"); lista.add("dulce");
-        lista.add("misterioso"); lista.add(null);
-
-        System.out.println(Ejercicios.cuentaCaramelos(lista, "dulce"));      // 2
-        System.out.println(Ejercicios.cuentaCaramelos(lista, "misterioso")); // 1
-        System.out.println(Ejercicios.cuentaCaramelos(lista, "salado"));     // 0
+        System.out.println("\n--- EJERCICIO 2 (todos los tipos) ---");
+        List<String> lista2 = List.of("dulce", "ácido", "dulce", "misterioso");
+        Ejercicios.cuentaTodosCaramelos(lista2);
+        // dulce: 2
+        // ácido: 1
+        // salado: 0
+        // misterioso: 1
         
+       
+        // ejercicio 03
         
-    }
-}
+        System.out.println("\n--- EJERCICIO 3 ---");
+        List<Integer> recorrido = List.of(2, 3, 4, -1, 5);
+        System.out.println(Ejercicios.pasosLaberinto(recorrido));                 // 9
+        System.out.println(Ejercicios.pasosLaberinto(List.of(1, 2, 3)));          // 6 (sin trampa)
+        System.out.println(Ejercicios.pasosLaberinto(List.of(-2, 5, 5)));         // 0 (trampa al inicio)
+        System.out.println(Ejercicios.pasosLaberinto(List.of()));                 // 0 (lista vacía)
+   
+    
+        // Ejercicio 04
+    	 
+	    System.out.println("\n--- EJERCICIO 4 ---");
+	    List<Integer> magia = List.of(3, 9, 7, 4, 10);
+	    System.out.println(Ejercicios.promedioMagia(magia));              // 8.666666666666666
+	    System.out.println(Ejercicios.promedioMagia(List.of(1, 2, 3)));   // 0.0 (ninguno válido)
+	    System.out.println(Ejercicios.promedioMagia(List.of(5, 5)));      // 5.0 (el 5 cuenta)
+	    System.out.println(Ejercicios.promedioMagia(List.of()));          // 0.0 (lista vacía)
+	    
+    
+    
+       }
+    }   

@@ -32,4 +32,13 @@ public class Utiles {
     }
     
     //TODO factorial de un número
+    
+    public static Integer factorial(Integer numero) {
+        Integer res = 1;
+        for (int i = 1; i <= numero; i++) {
+            res = res * i;
+        }
+        return res;
+    }
+    
 }
