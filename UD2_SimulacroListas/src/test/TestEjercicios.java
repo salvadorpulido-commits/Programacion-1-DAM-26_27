@@ -37,5 +37,26 @@ public class TestEjercicios {
         System.out.println("¿12 es perfecto?   " + Utiles.esPerfecto(12));
         
         //TODO Seguir haciendo las pruebas de los ejercicios
+        
+        
+        // ejercicio 01 
+        
+        System.out.println("\n--- EJERCICIO 1 ---");
+        System.out.println(Ejercicios.puedeEntrar(16, true, "zombie"));   // true
+        System.out.println(Ejercicios.puedeEntrar(15, false, "vampiro")); // true
+        System.out.println(Ejercicios.puedeEntrar(15, false, "bruja"));   // false
+        
+        // ejercicio 02
+        
+        System.out.println("\n--- EJERCICIO 2 ---");
+        List<String> lista = new ArrayList<String>();
+        lista.add("dulce"); lista.add("ácido"); lista.add("dulce");
+        lista.add("misterioso"); lista.add(null);
+
+        System.out.println(Ejercicios.cuentaCaramelos(lista, "dulce"));      // 2
+        System.out.println(Ejercicios.cuentaCaramelos(lista, "misterioso")); // 1
+        System.out.println(Ejercicios.cuentaCaramelos(lista, "salado"));     // 0
+        
+        
     }
 }

@@ -1,5 +1,6 @@
 package ejercicios;
 
+import java.util.Iterator;
 import java.util.List;
 import utiles.Utiles;
 
@@ -116,4 +117,47 @@ public class Ejercicios {
     
     //TODO Hacer aquí los ejercicios del examen 
     //los haremos con distintos bucles
+    
+        
+	 // Ejercicio 01: control de acceso al Baile de los Monstruos.
+	 // Entra si es vampiro (entrada libre), si tiene 18 años o más, o si va acompañado.
+    
+	 public static boolean puedeEntrar(Integer edad, boolean acompanado, String criatura) {
+	     boolean res = false;
+	
+	     if (criatura.equals("vampiro")) {
+	         res = true;
+	     } else if (edad >= 18 || acompanado) {
+	         res = true;
+	     }
+	
+	     return res;
+	 }
+    
+    // Ejercicio 02:  Clasificador de caramelos 
+	// Los caramelos recolectados tienen etiquetas: "dulce", "ácido", "salado", 
+	// "misterioso". 
+	// Crea un método que reciba una lista y cuente cuántos hay de un tipo dado, 
+	// ignorando nulos. 
+	 
+	 public static Integer cuentaCaramelos(List<String> caramelos, 
+			 String tipo) {
+		 
+		 Integer contador = 0;
+		 
+		 for (String caramelo : caramelos) {
+			 if (caramelo == null) {
+				 continue;
+				
+			}
+			
+			 if (caramelo.equals(tipo)) {
+				contador++;
+			
+			}
+		}
+		 
+	return contador;
+	 }
+    
 }
