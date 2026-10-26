@@ -50,19 +50,19 @@ public class Ejercicio05 {
 			numRespuesta = sc.nextLine().trim().toLowerCase();
 			
 			
-			if (numRespuesta == ("menor")) {
+			if (numRespuesta.equals("menor")) {
 				maximo = numPropuesto -1;
 				
-			} else if (numRespuesta == ("mayor")) {
+			} else if (numRespuesta.equals("mayor")) {
 				minimo = numPropuesto +1;
 				
-			} else if (numRespuesta == ("igual")) {
+			} else if (!numRespuesta.equals("igual")) {
 				System.out.println("Respuesta no valida,");
 				
 			}
 			
 			
-		} while (numRespuesta != ("igual"));
+		} while (!numRespuesta.equals("igual"));
 		
 		System.out.println("Enhorabuena, has acertado!! ");
 		
