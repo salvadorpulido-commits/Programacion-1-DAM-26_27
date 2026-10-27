@@ -78,7 +78,9 @@ public class TestEjercicios {
 	    System.out.println(Ejercicios.promedioMagia(List.of(5, 5)));      // 5.0 (el 5 cuenta)
 	    System.out.println(Ejercicios.promedioMagia(List.of()));          // 0.0 (lista vacía)
 	    
-    
+	    // Ejercicio 05
+	    
+	    
     
        }
     }   
