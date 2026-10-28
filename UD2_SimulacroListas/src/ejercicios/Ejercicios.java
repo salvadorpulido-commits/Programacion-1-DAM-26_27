@@ -101,6 +101,25 @@ public class Ejercicios {
 
         return (double) suma / numeros.size();
     }
+    
+    
+    // Mediante modo 
+    
+    public static Double media2B(List<Integer> numeros) {
+
+        double res = 0.0;
+        int suma = 0;
+        if (numeros.size() != 0) {
+        	for (int i = 0; i < numeros.size(); i++) {
+        		suma += numeros.get(i);
+			}
+            res = (double) suma / numeros.size();
+        }
+
+        return res;
+    }
+    
+    
 
     // 9. Calcular la media mediante while.
     public static Double media3(List<Integer> numeros) {
@@ -225,6 +244,54 @@ public class Ejercicios {
 
 		        return res;
 		    }
-		        
+		    
+	 
+	 // Ejercicio 05 Ejercicio 5 — Recursividad: Cuenta Atrás de Sustos 
+	 // Crea un método recursivo que simule una cuenta atrás desde un número hasta 0, 
+	 // imprimiendo cada número con un mensaje tipo “¡Boo n!”. 
+	 // Cuando llegue a 0, imprime “¡Susto final!”. 
+	 
+	 
+	 public static void cuentaAtrasSustos(Integer n) {
+		    if (n <= 0) {
+		        System.out.println("¡Susto final!");
+		    } else {
+		        System.out.println("Boo " + n);
+		        cuentaAtrasSustos(n - 1);
+		    }
+		}
+	 
+
+		 
+//	 Ejercicio 6 — La suma entre los dos ceros 
+//	 Hacer un método que reciba una lista de enteros de la cual conocemos que tiene 
+//	 dos ceros. Calcula la suma de los números que hay entre esos dos ceros . 
+	 
+	 public static Integer sumaEntreCeros(List<Integer> numeros) {
+
+		    Integer suma = 0;
+		    Integer primero = calculaPosPrimerCero(numeros);
+		    Integer segundo = calculaPosSegundoCero(numeros);
+
+		    for (int i = primero + 1; i < segundo; i++) {
+		        suma += numeros.get(i);
+		    }
+
+		    return suma;
+		}
+
+	 
+	 public static Integer sumaEntreCeros2(List<Integer> numeros) {
+		    Integer suma = 0;
+		    Integer primero = numeros.indexOf(0);
+		    Integer ultimo = numeros.lastIndexOf(0);
+
+		    for (int i = primero + 1; i < ultimo; i++) {
+		        suma += numeros.get(i);
+		    }
+
+		    return suma;
+		}
+	 
 }
 

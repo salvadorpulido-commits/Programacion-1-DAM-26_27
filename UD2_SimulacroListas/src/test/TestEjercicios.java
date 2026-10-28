@@ -80,7 +80,31 @@ public class TestEjercicios {
 	    
 	    // Ejercicio 05
 	    
+	    System.out.println("\n--- EJERCICIO 5 ---");
+	    Ejercicios.cuentaAtrasSustos(4);
+	    // Boo 4
+	    // Boo 3
+	    // Boo 2
+	    // Boo 1
+	    // ¡Susto final!
+
+	    Ejercicios.cuentaAtrasSustos(0);  // ¡Susto final!
+	    Ejercicios.cuentaAtrasSustos(-2); // ¡Susto final!
 	    
+	    // Ejercicio 06
+	    
+	    System.out.println("\n--- EJERCICIO 6 ---");
+	    List<Integer> numero = List.of(3, 9, 0, 4, 10, 0, -3, 5);
+	    System.out.println(Ejercicios.sumaEntreCeros(numero));                    // 14
+	    System.out.println(Ejercicios.sumaEntreCeros(List.of(0, 0)));              // 0 (ceros seguidos)
+	    System.out.println(Ejercicios.sumaEntreCeros(List.of(0, 2, -5, 0, 7)));    // -3 (el negativo suma)
+	    System.out.println(Ejercicios.sumaEntreCeros(List.of(1, 0, 8, 0)));        // 8 (segundo cero al final)
+    
+	    
+	    System.out.println(Ejercicios.sumaEntreCeros2(numero));                    // 14
+	    System.out.println(Ejercicios.sumaEntreCeros2(List.of(0, 0)));              // 0 (ceros seguidos)
+	    System.out.println(Ejercicios.sumaEntreCeros2(List.of(0, 2, -5, 0, 7)));    // -3 (el negativo suma)
+	    System.out.println(Ejercicios.sumaEntreCeros2(List.of(1, 0, 8, 0)));        // 8 (segundo cero al final)
     
        }
     }   
