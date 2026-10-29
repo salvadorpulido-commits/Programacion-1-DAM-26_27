@@ -292,5 +292,32 @@ public class Ejercicios {
 
 		    return suma;
 		}
+	// Devuelve la posición del primer 0 de la lista.
+	    private static Integer calculaPosPrimerCero(List<Integer> numeros) {
+	        Integer pos = 0;
+
+	        for (int i = 0; i < numeros.size(); i++) {
+	            if (numeros.get(i) == 0) {
+	                pos = i;
+	                break;
+	            }
+	        }
+
+	        return pos;
+	    }
+
+	    // Devuelve la posición del segundo 0, buscando a partir del primero.
+	    private static Integer calculaPosSegundoCero(List<Integer> numeros) {
+	        Integer pos = calculaPosPrimerCero(numeros);
+
+	        for (int i = pos + 1; i < numeros.size(); i++) {
+	            if (numeros.get(i) == 0) {
+	                pos = i;
+	                break;
+	            }
+	        }
+
+	        return pos;
+	    }
 	 
 }
