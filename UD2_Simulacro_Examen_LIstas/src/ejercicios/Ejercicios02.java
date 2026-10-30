@@ -54,6 +54,16 @@ public class Ejercicios02 {
 	public static void dibujarZ(Integer lado) {
 		
 		
+	 for (int i = 0; i < lado; i++) {
+		 for (int j = 0; j < lado ; j++) {
+			
+			
+		}
+		
+		
+	}
+		
+		
 		
 	}
 
