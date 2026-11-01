@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Ejercicios02 {
+public class Ejercicios {
 	
 	//Ejercicio 01
 

@@ -1,6 +1,6 @@
 package utiles;
 
-public class Utiles02 {
+public class Utiles {
 	
 	// numeros primos
 	
