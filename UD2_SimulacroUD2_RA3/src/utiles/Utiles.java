@@ -5,8 +5,14 @@ public class Utiles {
 	// numeros primos
 	
 	 public static boolean esPrimo(Integer numero) {
-	    	Boolean res = true;
-
+	    	
+		 
+		 Boolean res = true;
+		 
+		 if (numero < 2) {
+			 res = false;
+		 }	
+			
 	        for (int divisor = 2; divisor < numero ; divisor++) {
 	            if (numero % divisor == 0) {
 	                res = false;
@@ -26,7 +32,7 @@ public class Utiles {
 	                sumaDivisores += divisor;
 	            }
 	        }
-	        if(sumaDivisores.equals(numero)) {
+	        if(sumaDivisores.equals(numero) && numero > 0) {
 	        	res = true;
 	        }
 	        return res;

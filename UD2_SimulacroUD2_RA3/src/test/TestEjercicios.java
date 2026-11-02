@@ -1,6 +1,5 @@
 package test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import ejercicios.Ejercicios;
@@ -23,9 +22,18 @@ public class TestEjercicios {
 		//Ejercicio 2 Test
 		
 		System.out.println("\n--- DIBUJAR Z ---");
-		Ejercicios.dibujarZ(5); // Esperado: dibujo de Z
-		Ejercicios.dibujarZ(1); // Esperado: dibujo de un unico *
-		Ejercicios.dibujarZ(0); // Esperado: nada.
+		System.out.println("lado 5"); Ejercicios.dibujarZ(5); // Esperado: dibujo de Z
+		System.out.println("lado 1"); Ejercicios.dibujarZ(1); // Esperado: dibujo de un unico *
+		System.out.println("lado 0"); Ejercicios.dibujarZ(0); // Esperado: nada.
+		System.out.println("lado 6"); Ejercicios.dibujarZ(6); // Esperado: dibujo de Z de mayor tamaño
+		System.out.println("lado 4"); Ejercicios.dibujarZ(4); // Esperado: dibujo de Z
+		
+		// Ejercicio 3 Test
+		System.out.println("\n--- SUMA ESPECIALES ---");
+		System.out.println("(1, 10, 3)= " + Ejercicios.sumaPrimerosEspeciales(1, 10, 3));  // esperado 10
+		System.out.println("(1, 10, 5)= " + Ejercicios.sumaPrimerosEspeciales(1, 10, 5));  // esperado 23
+		System.out.println("(8, 15, 2)= " + Ejercicios.sumaPrimerosEspeciales(8, 15, 2));  // esperado 24
+		
 		
 	}
 

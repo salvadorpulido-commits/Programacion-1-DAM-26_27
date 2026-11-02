@@ -1,5 +1,7 @@
 package ejercicios;
 
+import utiles.Utiles;
+
 public class Ejercicios {
 
 	// Ejercicio 01
@@ -74,9 +76,46 @@ public class Ejercicios {
 			System.out.println();
 		}
 		
+	}
 
 		// Ejercicio 03
 		
+		public static Integer sumaPrimerosEspeciales(Integer inicio, Integer fin, Integer 
+				cantidad) {
+			
+			if (cantidad <=0) {
+				return 0;
+			}
+			
+			Integer suma = 0;
+			Integer encontrados = 0;
+			
+			// Recorremos el intervalo de menor a mayor con los dos extremos incluidos
+			
+			for (int numero = inicio; numero <= fin; numero++) {
+				
+				// Especial = primo o perfecto (si cumple las dos, solo entra una vez
+				
+				if (Utiles.esPrimo(numero) || Utiles.esPerfecto(numero)) {
+					
+					suma = suma + numero;
+					encontrados++;
+					
+					// Salimos con break despues de encontrar los numero
+					
+					if (encontrados.equals(cantidad)) {
+						break;
+						
+					}
+					
+				}
+				
+			}
+				
+			return suma;
+			
+		}
+		
 	}
 
-}
+
