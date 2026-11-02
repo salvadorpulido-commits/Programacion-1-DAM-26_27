@@ -153,4 +153,43 @@ public class Ejercicios {
 		
 	}
 
+	
+	// Ejercicio 06
+	
+	public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer 
+			sumaObjetivo) {
+		
+		Integer posicion = -1;  // resultado: vale -1 si no hay coincidencia o la lista está vacía
+				
+		 // Recorre la lista de izquierda a derecha, con i como posición (empieza en 0)
+		
+		for (int i = 0; i < numeros.size(); i++) {
+						
+			
+			Integer suma = 0;  // suma de cifras del numero actual; se reinicia en cada vuelta 
+			Integer copia = numeros.get(i); // copia del numero, para poder dividirlo sin perder el original
+			
+			 // Mientras queden cifras por procesar
+			
+			while (copia > 0) {
+				
+				suma = suma + (copia % 10); // suma la ultima cifra 
+				copia = copia / 10;  // quita la ultima cifra
+								
+			}
+			
+			// Si la suma de cifras coincide con la suma objetivo
+			
+			if (suma.equals(sumaObjetivo)) {
+				posicion = i;                // guarda la posición de este primer número
+				break;                       // termina la búsqueda: solo interesa el primero
+				
+			}
+			
+		}
+		
+		// Devuelve la posición encontrada, o -1 si no hubo ninguna coincidencia
+		
+		return posicion;
+	}
 }

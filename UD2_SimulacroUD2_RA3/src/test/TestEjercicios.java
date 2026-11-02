@@ -3,7 +3,6 @@ package test;
 import java.util.List;
 
 import ejercicios.Ejercicios;
-import utiles.Utiles;
 
 public class TestEjercicios {
 	
@@ -49,6 +48,12 @@ public class TestEjercicios {
 		System.out.println("(1, 5, 4, 2), 2)= " + Ejercicios.contarPicos(List.of(1, 5, 4, 2), 2)); // Esperado: 0
 		System.out.println("(1, 5, 3), 2)= " + Ejercicios.contarPicos(List.of(1, 5, 3), 2)); // Esperado: 1
 		
+		// Ejercicio 6 Test
+		
+		System.out.println("\n--- BUSCAR POR SUMA DE CIFRAS ---");
+		System.out.println("(7, 16, 25), 7)= " + Ejercicios.primeraPosicionSumaCifras(List.of(7, 16, 25), 7)); // esperado 0
+		System.out.println("(11, 20, 5), 8)= " + Ejercicios.primeraPosicionSumaCifras(List.of(11, 20, 5), 8)); // esperado -1
+		System.out.println("(), 5)= " + Ejercicios.primeraPosicionSumaCifras(List.of(), 5)); // esperado -1
 	}
 
 }
