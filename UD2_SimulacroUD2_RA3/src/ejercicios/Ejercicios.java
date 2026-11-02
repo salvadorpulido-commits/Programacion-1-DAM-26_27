@@ -7,7 +7,7 @@ public class Ejercicios {
 	public static Integer precioEntrada(Integer edad, String dia, Boolean socio) {
 
 		Integer precio;
-		
+
 		if (edad < 0) {
 			return -1;
 		}
@@ -49,26 +49,34 @@ public class Ejercicios {
 		return precio;
 	}
 
-}
+	// Ejercicio 02
 
-//}
-//	
-//	// Ejercicio 02
-//	
-//	public static void dibujarZ(Integer lado) {
-//		
-//		
-//	 for (int i = 0; i < lado; i++) {
-//		 for (int j = 0; j < lado ; j++) {
-//			
-//			
-//		}
-//		
-//		
-//	}
-//		
-//		
-//		
-//	}
-//
-//}
+	public static void dibujarZ(Integer lado) {
+
+		// Bucle exterior: recorre las filas, de arriba abajo
+
+		for (int fila = 0; fila < lado; fila++) {
+			
+			// Bucle interior: recorre las columnas de la fila actual
+
+			for (int columna = 0; columna < lado; columna++) {
+				
+				// Pone asteriscos en la primera fila, en la ultima fila o en la diagonal
+				
+				if (fila == 0 || fila == lado -1 || fila + columna == lado -1) {
+					
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+
+			}
+			System.out.println();
+		}
+		
+
+		// Ejercicio 03
+		
+	}
+
+}
