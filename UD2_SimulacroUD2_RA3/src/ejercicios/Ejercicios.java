@@ -89,7 +89,7 @@ public class Ejercicios {
 		}
 
 		Integer suma = 0;
-		Integer encontrados = 0;
+		Integer contador = 0;
 
 		// Recorremos el intervalo de menor a mayor con los dos extremos incluidos
 
@@ -100,11 +100,11 @@ public class Ejercicios {
 			if (Utiles.esPrimo(numero) || Utiles.esPerfecto(numero)) {
 
 				suma = suma + numero;
-				encontrados++;
+				contador++;
 
 				// Salimos con break despues de encontrar los numero
 
-				if (encontrados.equals(cantidad)) {
+				if (contador.equals(cantidad)) {
 					break;
 
 				}
