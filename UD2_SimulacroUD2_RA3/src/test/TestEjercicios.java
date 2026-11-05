@@ -54,6 +54,15 @@ public class TestEjercicios {
 		System.out.println("(7, 16, 25), 7)= " + Ejercicios.primeraPosicionSumaCifras(List.of(7, 16, 25), 7)); // esperado 0
 		System.out.println("(11, 20, 5), 8)= " + Ejercicios.primeraPosicionSumaCifras(List.of(11, 20, 5), 8)); // esperado -1
 		System.out.println("(), 5)= " + Ejercicios.primeraPosicionSumaCifras(List.of(), 5)); // esperado -1
-	}
+	
+	    //Exercise 7 
+		
+		//countNonOverlappingPairs(List.of(2, 3, 2, 8, 7))
+		
+		System.out.println("\n--- COUNT NON OVERLAPPING PAIRS---");
+		System.out.println("(2, 3, 2, 8, 7))= " + Ejercicios.countNonOverlappingPairs(List.of(2, 3, 2, 8, 7)));
+		System.out.println("1, 2, 3))= " + Ejercicios.countNonOverlappingPairs(List.of(1, 2, 3)));
+		System.out.println("1, 1, 1))= " + Ejercicios.countNonOverlappingPairs(List.of(1, 1, 1)));
+		}
 
 }

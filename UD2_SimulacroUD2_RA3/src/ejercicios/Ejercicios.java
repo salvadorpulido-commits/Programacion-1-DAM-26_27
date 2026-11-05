@@ -1,5 +1,6 @@
 package ejercicios;
 
+
 import java.util.List;
 
 import utiles.Utiles;
@@ -193,5 +194,25 @@ public class Ejercicios {
 		return posicion;
 	}
 	
+
+	
+	
+	// Exercise 07
+	
+	public static Integer countNonOverlappingPairs(List<Integer> numbers) {
+		
+	Integer res=0;
+	
+	for (int i = 0; i < numbers.size() -1; i++) {
+		Integer element = numbers.get(i);
+		Integer nextElement = numbers.get(i+1);
+		if ((element + nextElement)%5==0) {
+			res++;
+			i++;
+		}
+		
+	}
+		return res;	
+   }
 	
 }
