@@ -133,7 +133,7 @@ public class Ejercicios {
 
 		return numero * factorialConSaltos(numero - salto, salto);
 
-	}
+	}	
 
 	// Ejercicio 05
 	
@@ -192,4 +192,6 @@ public class Ejercicios {
 		
 		return posicion;
 	}
+	
+	
 }
