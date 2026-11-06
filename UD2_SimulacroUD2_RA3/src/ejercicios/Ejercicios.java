@@ -194,7 +194,14 @@ public class Ejercicios {
 		return posicion;
 	}
 	
-
+		/* 
+		 * Public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer 
+			sumaObjetivo) {
+			
+			Integer pos = -1;
+			int=0;
+			while (i< numeros.size());
+		 */
 	
 	
 	// Exercise 07
