@@ -3,6 +3,7 @@ package ejercicios;
 
 import java.util.List;
 import java.util.ArrayList;
+import utiles.UtilesRecorridos;
 
 public class Ejercicio01 {
 
@@ -98,8 +99,8 @@ public class Ejercicio01 {
 	public static Integer cuentaPrimosEn(List<Integer> lis) {
 		Integer res = 0;
 		for (Integer e:lis) {
-			if (Utiles.esPrimo(e)) {
-				
+			if (UtilesRecorridos.esPrimo(e)) {
+				res++;
 			}
 			
 		}
