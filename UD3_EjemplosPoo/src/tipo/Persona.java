@@ -9,13 +9,14 @@ public class Persona {
 	private Double peso;
 	private Sexo sexo;
 	
-	public Persona(String nombre, Integer edad, Double peso, Sexo sexo) {
 	
+	public Persona(String nombre, Integer edad, Double peso, Sexo sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.peso = peso;
 		this.sexo = sexo;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -39,6 +40,11 @@ public class Persona {
 	}
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + ", sexo=" + sexo + "]";
 	}
 	
 	
