@@ -201,6 +201,17 @@ public class Ejercicios {
 			Integer pos = -1;
 			int=0;
 			while (i< numeros.size());
+				if(Utiles.sumaCifras(numeros.get(i))==sumaObjetivo) {
+					pos = i;
+					break;
+			        }
+			       i++;
+			      }
+			     return pos;	
+			    }	
+			
+			   }
+					
 		 */
 	
 	
@@ -220,6 +231,7 @@ public class Ejercicios {
 		
 	}
 		return res;	
-   }
-	
+  }
+
 }
+	

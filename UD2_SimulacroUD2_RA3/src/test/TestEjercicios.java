@@ -4,6 +4,7 @@ import java.util.List;
 
 import ejercicios.Ejercicios;
 
+
 public class TestEjercicios {
 	
 	public static void main(String[] args) {
@@ -63,6 +64,7 @@ public class TestEjercicios {
 		System.out.println("(2, 3, 2, 8, 7))= " + Ejercicios.countNonOverlappingPairs(List.of(2, 3, 2, 8, 7))); // Esperado 2
 		System.out.println("1, 2, 3))= " + Ejercicios.countNonOverlappingPairs(List.of(1, 2, 3))); // Esperado 1
 		System.out.println("1, 1, 1))= " + Ejercicios.countNonOverlappingPairs(List.of(1, 1, 1))); // Esperado 0
-		}
+		
+	}
 
 }

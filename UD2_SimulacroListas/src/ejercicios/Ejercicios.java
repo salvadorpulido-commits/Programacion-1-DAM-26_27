@@ -134,7 +134,7 @@ public class Ejercicios {
         return (double) suma / numeros.size();
     }
     
-    //TODO Hacer aquí los ejercicios del examen 
+    //Hacer aquí los ejercicios del examen 
     //los haremos con distintos bucles
     
         

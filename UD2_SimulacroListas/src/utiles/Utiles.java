@@ -41,4 +41,35 @@ public class Utiles {
         return res;
     }
     
+  //factorial recursivo
+    public static Integer factorialRecursivo(Integer n) {
+    	Integer res=1;
+    	if (n==1) {
+			res=1;
+		} else {
+			res=n* factorialRecursivo(n-1);
+		}
+    	return res;
+    }
+
+    // Devuelve -1 para valores fuera de 0 a 20 (factorial con long).
+    public static Long factorialIteratico(Integer numero) {
+        Long resultado = -1L;
+        if (numero != null && numero >= 0 && numero <= 20) {
+            resultado = 1L;
+            for (int i = 2; i <= numero; i++) {
+                resultado *= i;
+            }
+        }
+        return resultado;
+    }
+    
+    public static Integer sumaCifras(Integer n) {
+    	Integer suma = 0;
+    	while (n!=0) {
+			suma += n%10;
+			n = n/10;
+		}
+    	return suma;
+    }
 }
