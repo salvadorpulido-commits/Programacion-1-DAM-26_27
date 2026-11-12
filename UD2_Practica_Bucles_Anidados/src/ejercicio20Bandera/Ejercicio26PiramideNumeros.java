@@ -8,11 +8,8 @@ public class Ejercicio26PiramideNumeros {
 
 		Scanner sc = new Scanner(System.in);
 
-		Integer N;
-		do {
-			System.out.println("Introduce N (entre 1 y 9):");
-			N = sc.nextInt();
-		} while (N <= 0 || N > 9);
+		System.out.println("Introduce N (entre 1 y 9):");
+		Integer N = sc.nextInt();
 
 		for (Integer i = 0; i < N; i++) {
 
