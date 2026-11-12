@@ -23,6 +23,7 @@ public class Ejercicio25Floyd {
 				System.out.print(contador + " ");
 				contador++;
 			}
+			
 			System.out.println();
 		}
 
