@@ -31,10 +31,12 @@ public class Ejercicio20PiramideHueca {
 				System.out.print(" ");
 
 			}
+			
+			// asteriscos fila
 
 			Integer cantidad = 2 * (N - i) - 1;
 
-			// asteriscos
+			
 
 			for (int j = 0; j < cantidad; j++) {
 
