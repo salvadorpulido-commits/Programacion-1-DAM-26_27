@@ -62,15 +62,15 @@ public class Ejercicios {
 
 		// Bucle exterior: recorre las filas, de arriba abajo
 
-		for (int fila = 0; fila < lado; fila++) {
+		for (int i = 0; i < lado; i++) {
 
 			// Bucle interior: recorre las columnas de la fila actual
 
-			for (int columna = 0; columna < lado; columna++) {
+			for (int j = 0; j < lado; j++) {
 
 				// Pone asteriscos en la primera fila, en la ultima fila o en la diagonal
 
-				if (fila == 0 || fila == lado - 1 || fila + columna == lado - 1) {
+				if (i == 0 || i == lado - 1 || i + j == lado - 1) {
 
 					System.out.print("*");
 				} else {

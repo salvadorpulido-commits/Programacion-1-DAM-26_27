@@ -50,4 +50,15 @@ public class UtilesRecorridos {
 		return res;
 	}
 
+	// Devuelve -1 para valores fuera de 0 a 20 (factorial con long).
+    public static Long factorial(Integer numero) {
+        Long resultado = -1L;
+        if (numero != null && numero >= 0 && numero <= 20) {
+            resultado = 1L;
+            for (int i = 2; i <= numero; i++) {
+                resultado *= i;
+            }
+        }
+        return resultado;
+    }
 }

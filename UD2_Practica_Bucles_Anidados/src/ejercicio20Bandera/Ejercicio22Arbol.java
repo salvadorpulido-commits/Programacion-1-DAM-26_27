@@ -10,7 +10,7 @@ public class Ejercicio22Arbol {
 
 		Integer N;
 		do {
-			System.out.println("Introduce los niveles de la copa (positivo):");
+			System.out.println("Introduce la copa (positivo):");
 			N = sc.nextInt();
 		} while (N <= 0);
 
