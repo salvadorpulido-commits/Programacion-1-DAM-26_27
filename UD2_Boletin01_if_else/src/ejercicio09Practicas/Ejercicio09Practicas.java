@@ -45,8 +45,6 @@ public class Ejercicio09Practicas {
 	        return "SOBRESALIENTE";
 	    }
 	}
-	
-	
 		//	System.out.println("\n--- CALIFICACION ---");
 		//	System.out.println("(8, 6, 90)= " + Ejercicio01.calificacion(8, 6, 90));        // esperado NOTABLE (56 + 18 = 74)
 		//	System.out.println("(10, 10, 100)= " + Ejercicio01.calificacion(10, 10, 100));  // esperado SOBRESALIENTE
