@@ -247,5 +247,6 @@ public class Ejercicio09Practicas {
 //		System.out.println("(7, 0, *)= " + Ejercicio01.operar(7, 0, "*"));    // esperado 0 (multiplicar por 0 es válido)
 //		System.out.println("(5, 2, %)= " + Ejercicio01.operar(5, 2, "%"));    // esperado null (operador que no existe)
 		
+		
 }
 				
