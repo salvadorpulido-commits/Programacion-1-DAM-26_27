@@ -59,5 +59,193 @@ public class Ejercicio09Practicas {
 		//	System.out.println("(6, 6, 101)= " + Ejercicio01.calificacion(6, 6, 101));      // esperado DATOS NO VALIDOS (asistencia fuera de rango)
 
 
+		/*Recibe el peso del paquete en kg y el destino ("NACIONAL", "EUROPA" o "MUNDO") y devuelve el precio en euros. 
+		 * Tarifa base: 5 € nacional, 12 € Europa, 25 € mundo. 
+		 * Recargo por peso: hasta 5 kg no hay recargo, de más de 5 a 20 kg se suman 3 €, y de más de 20 kg se suman 8 €. 
+		 * Si el peso es 0 o negativo o supera los 50 kg, o el destino no existe, devuelve -1.
+		 */
+	
+	public static Integer precioEnvio(Integer peso, String destino) {
 
+	    // Peso fuera del rango admitido
+	    if (peso <= 0 || peso > 50) {
+	        return -1;
+	    }
+
+	    // Tarifa base según el destino
+	    Integer precio;
+	    if (destino.equals("NACIONAL")) {
+	        precio = 5;
+	    } else if (destino.equals("EUROPA")) {
+	        precio = 12;
+	    } else if (destino.equals("MUNDO")) {
+	        precio = 25;
+	    } else {
+	        return -1;   // destino que no existe
+	    }
+
+	    // Recargo por peso (los límites 5 y 20 pertenecen al tramo de abajo)
+	    if (peso > 20) {
+	        precio = precio + 8;
+	    } else if (peso > 5) {
+	        precio = precio + 3;
+	    }
+	    // Hasta 5 kg no hay recargo, y por eso no hace falta else
+
+	    return precio;
+	}
+	
+
+
+		//System.out.println("\n--- PRECIO ENVIO ---");
+		//System.out.println("(1, MUNDO)= " + Ejercicio01.precioEnvio(1, "MUNDO"));         // esperado 25
+		//System.out.println("(3, NACIONAL)= " + Ejercicio01.precioEnvio(3, "NACIONAL"));   // esperado 5
+		//System.out.println("(5, NACIONAL)= " + Ejercicio01.precioEnvio(5, "NACIONAL"));   // esperado 5 (límite: sin recargo)
+		//System.out.println("(6, NACIONAL)= " + Ejercicio01.precioEnvio(6, "NACIONAL"));   // esperado 8 (5 + 3)
+		//System.out.println("(20, EUROPA)= " + Ejercicio01.precioEnvio(20, "EUROPA"));     // esperado 15 (12 + 3, límite)
+		//System.out.println("(21, EUROPA)= " + Ejercicio01.precioEnvio(21, "EUROPA"));     // esperado 20 (12 + 8)
+		//System.out.println("(50, MUNDO)= " + Ejercicio01.precioEnvio(50, "MUNDO"));       // esperado 33 (25 + 8)
+		//System.out.println("(51, MUNDO)= " + Ejercicio01.precioEnvio(51, "MUNDO"));       // esperado -1 (demasiado pesado)
+		//System.out.println("(0, MUNDO)= " + Ejercicio01.precioEnvio(0, "MUNDO"));         // esperado -1 (peso no válido)
+		//System.out.println("(10, MARTE)= " + Ejercicio01.precioEnvio(10, "MARTE"));       // esperado -1 (destino que no existe)
+
+		
+		/* 
+		 * Recibe la velocidad del coche y el límite de la vía, y devuelve la multa en euros. Sin exceso no hay multa. 
+		 * Con un exceso de hasta 20 km/h son 100 €, de más de 20 hasta 40 son 300 €, y de más de 40 son 600 €. 
+		 * Si la velocidad es negativa o el límite es 0 o negativo, devuelve -1.
+		 */
+
+		public static Integer multaVelocidad(Integer velocidad, Integer limite) {
+		
+		    // Datos no válidos
+		    if (velocidad < 0 || limite <= 0) {
+		        return -1;
+		    }
+		
+		    // Km/h por encima del límite (puede ser 0 o negativo si va bien)
+		    Integer exceso = velocidad - limite;
+		
+		    if (exceso <= 0) {
+		        return 0;
+		    } else if (exceso <= 20) {
+		        return 100;
+		    } else if (exceso <= 40) {
+		        return 300;
+		    } else {
+		        return 600;
+		    }
+		}
+		
+//  	System.out.println("\n--- MULTA VELOCIDAD ---");
+//		System.out.println("(30, 50)= " + Ejercicio01.multaVelocidad(30, 50));    // esperado 0 (va por debajo)
+//		System.out.println("(50, 50)= " + Ejercicio01.multaVelocidad(50, 50));    // esperado 0 (justo en el límite)
+//		System.out.println("(60, 50)= " + Ejercicio01.multaVelocidad(60, 50));    // esperado 100 (exceso 10)
+//		System.out.println("(70, 50)= " + Ejercicio01.multaVelocidad(70, 50));    // esperado 100 (exceso 20, límite)
+//		System.out.println("(71, 50)= " + Ejercicio01.multaVelocidad(71, 50));    // esperado 300 (exceso 21)
+//		System.out.println("(90, 50)= " + Ejercicio01.multaVelocidad(90, 50));    // esperado 300 (exceso 40, límite)
+//		System.out.println("(91, 50)= " + Ejercicio01.multaVelocidad(91, 50));    // esperado 600 (exceso 41)
+//		System.out.println("(-5, 50)= " + Ejercicio01.multaVelocidad(-5, 50));    // esperado -1 (velocidad no válida)
+//		System.out.println("(50, 0)= " + Ejercicio01.multaVelocidad(50, 0));      // esperado -1 (límite no válido)
+		
+		
+		
+		/* Recibe el importe de la compra en euros, si el cliente es socio y un código de cupón, y devuelve el precio final. 
+		 * El descuento base depende del importe: 15 % desde 200 €, 10 % desde 100 € y 5 % desde 50 €. 
+		 * Los socios suman 5 puntos más. El cupón "EXTRA10" suma 10 puntos, pero solo si el importe es al menos 100 €. 
+		 * El descuento total nunca supera el 25 %. El descuento se calcula con enteros (se redondea hacia abajo). 
+		 * Si el importe es 0 o negativo, devuelve -1.
+		 */
+		
+		public static Integer precioConDescuento(Integer importe, Boolean socio, String cupon) {
+
+		    // Importe no válido
+		    if (importe <= 0) {
+		        return -1;
+		    }
+
+		    // Porcentaje base según el importe (de mayor a menor)
+		    Integer porcentaje;
+		    if (importe >= 200) {
+		        porcentaje = 15;
+		    } else if (importe >= 100) {
+		        porcentaje = 10;
+		    } else if (importe >= 50) {
+		        porcentaje = 5;
+		    } else {
+		        porcentaje = 0;
+		    }
+
+		    // Los descuentos se acumulan, así que son if separados
+		    if (socio) {
+		        porcentaje = porcentaje + 5;
+		    }
+		    if (cupon.equals("EXTRA10") && importe >= 100) {
+		        porcentaje = porcentaje + 10;
+		    }
+
+		    // Tope del 25 %
+		    if (porcentaje > 25) {
+		        porcentaje = 25;
+		    }
+
+		    // Se multiplica antes de dividir para no perder precisión
+		    Integer descuento = importe * porcentaje / 100;
+
+		    return importe - descuento;
+		}
+		
+//      System.out.println("\n--- PRECIO CON DESCUENTO ---");
+//		System.out.println("(40, false, NINGUNO)= " + Ejercicio01.precioConDescuento(40, false, "NINGUNO"));      // esperado 40 (0 %)
+//		System.out.println("(40, true, NINGUNO)= " + Ejercicio01.precioConDescuento(40, true, "NINGUNO"));        // esperado 38 (5 % socio)
+//		System.out.println("(50, false, NINGUNO)= " + Ejercicio01.precioConDescuento(50, false, "NINGUNO"));      // esperado 48 (5 % de 50 es 2,5 y se redondea a 2)
+//		System.out.println("(100, false, NINGUNO)= " + Ejercicio01.precioConDescuento(100, false, "NINGUNO"));    // esperado 90 (10 %)
+//		System.out.println("(200, false, NINGUNO)= " + Ejercicio01.precioConDescuento(200, false, "NINGUNO"));    // esperado 170 (15 %)
+//		System.out.println("(100, true, NINGUNO)= " + Ejercicio01.precioConDescuento(100, true, "NINGUNO"));      // esperado 85 (15 %)
+//		System.out.println("(100, false, EXTRA10)= " + Ejercicio01.precioConDescuento(100, false, "EXTRA10"));    // esperado 80 (20 %)
+//		System.out.println("(100, true, EXTRA10)= " + Ejercicio01.precioConDescuento(100, true, "EXTRA10"));      // esperado 75 (25 %)
+//		System.out.println("(200, true, EXTRA10)= " + Ejercicio01.precioConDescuento(200, true, "EXTRA10"));      // esperado 150 (sumaría 30 %, pero el tope es 25 %)
+//		System.out.println("(80, false, EXTRA10)= " + Ejercicio01.precioConDescuento(80, false, "EXTRA10"));      // esperado 76 (el cupón no vale con menos de 100: solo 5 %)
+//		System.out.println("(80, true, EXTRA10)= " + Ejercicio01.precioConDescuento(80, true, "EXTRA10"));        // esperado 72 (10 %)
+//		System.out.println("(0, true, NINGUNO)= " + Ejercicio01.precioConDescuento(0, true, "NINGUNO"));          // esperado -1
+//		System.out.println("(-5, false, NINGUNO)= " + Ejercicio01.precioConDescuento(-5, false, "NINGUNO"));      // esperado -1
+		
+		
+		/*
+		 * Recibe dos enteros y un operador ("+", "-", "*" o "/") y devuelve el resultado. 
+		 * La división es entera. Si el operador no existe o se divide entre 0, devuelve null.
+		 */
+		
+		public static Integer operar(Integer a, Integer b, String operador) {
+
+		    if (operador.equals("+")) {
+		        return a + b;
+		    } else if (operador.equals("-")) {
+		        return a - b;
+		    } else if (operador.equals("*")) {
+		        return a * b;
+		    } else if (operador.equals("/")) {
+		        // La división entre 0 no se puede hacer: se devuelve null
+		        if (b == 0) {
+		            return null;
+		        }
+		        return a / b;
+		    } else {
+		        // Operador que no existe
+		        return null;
+		    }
+		}
+		
+//		System.out.println("\n--- CALCULADORA ---");
+//		System.out.println("(6, 3, +)= " + Ejercicio01.operar(6, 3, "+"));    // esperado 9
+//		System.out.println("(6, 3, -)= " + Ejercicio01.operar(6, 3, "-"));    // esperado 3
+//		System.out.println("(6, 3, *)= " + Ejercicio01.operar(6, 3, "*"));    // esperado 18
+//		System.out.println("(6, 3, /)= " + Ejercicio01.operar(6, 3, "/"));    // esperado 2
+//		System.out.println("(7, 2, /)= " + Ejercicio01.operar(7, 2, "/"));    // esperado 3 (división entera)
+//		System.out.println("(0, 5, /)= " + Ejercicio01.operar(0, 5, "/"));    // esperado 0 (0 dividido entre algo sí se puede)
+//		System.out.println("(7, 0, /)= " + Ejercicio01.operar(7, 0, "/"));    // esperado null (división entre 0)
+//		System.out.println("(7, 0, *)= " + Ejercicio01.operar(7, 0, "*"));    // esperado 0 (multiplicar por 0 es válido)
+//		System.out.println("(5, 2, %)= " + Ejercicio01.operar(5, 2, "%"));    // esperado null (operador que no existe)
+		
 }
+				
