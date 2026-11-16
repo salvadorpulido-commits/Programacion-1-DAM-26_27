@@ -1,4 +1,4 @@
-package tipo;
+package tipos;
 
 public class Persona {
 	

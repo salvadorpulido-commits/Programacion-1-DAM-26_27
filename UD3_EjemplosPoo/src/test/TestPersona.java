@@ -3,8 +3,8 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 
-import tipo.Persona;
-import tipo.Sexo;
+import tipos.Persona;
+import tipos.Sexo;
 
 public class TestPersona {
 
