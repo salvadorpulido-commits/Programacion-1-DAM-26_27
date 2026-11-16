@@ -1,0 +1,51 @@
+package tipos;
+
+public class Punto {
+	
+	private Double x;
+	private Double y;
+	
+	//Constructor con parametros
+	
+	public Punto(Double x, Double y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	//Constructor por defecto
+	
+	public Punto() {
+		this.x = 0.0;
+		this.y = 0.0;
+	}
+	
+	public Double getX() {
+		return x;
+	}
+	public void setX(Double x) {
+		this.x = x;
+	}
+	public Double getY() {
+		return y;
+	}
+	public void setY(Double y) {
+		this.y = y;
+	}
+	@Override
+	public String toString() {
+		return "(" + getX() + "," + getY()+ ")";
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
