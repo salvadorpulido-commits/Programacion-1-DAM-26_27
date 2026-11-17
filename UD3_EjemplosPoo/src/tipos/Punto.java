@@ -33,10 +33,15 @@ public class Punto {
 	}
 	@Override
 	public String toString() {
-		return "(" + getX() + "," + getY()+ ")";
+		return "(" + this.getX() + "," + getY()+ ")";
 	}
 	
-	
+	public Double distanciaA( Punto p) {
+		Double catx = this.getX()-p.getX();
+		Double caty = this.getY()-p.getY();
+		return Math.sqrt(catx*catx + caty*caty);
+		
+	}
 }
 
 
