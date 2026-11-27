@@ -16,6 +16,7 @@ public class Coche {
 		this.estado = estado;
 		
 		
+		
 	}
 	
 	public static void validarTexto(String texto, String campo) {
